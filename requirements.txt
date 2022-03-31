@@ -3,3 +3,4 @@ pandas
 streamlit
 torch
 transformers
+deep-translator
