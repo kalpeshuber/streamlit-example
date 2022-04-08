@@ -36,7 +36,7 @@ def special_characters(sample_str):
             alphanumeric += character
     return alphanumeric.strip()
 
-un_lbl  = np.load('/home/kpraja4/kpraja4_nfs/Product_Categorization/Sttreamlit/sub_cat_list.npy',allow_pickle=True)
+un_lbl  = np.load('sub_cat_list.npy',allow_pickle=True)
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 
@@ -88,7 +88,7 @@ def convert_df(df):
 
 
 model = BertClassifier()
-model.load_state_dict(torch.load('/home/kpraja4/kpraja4_nfs/Product_Categorization/Sttreamlit/4_model.pth',map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('4_model.pth',map_location=torch.device('cpu')))
 
 """
 # Welcome to Product Categorization Demo!
